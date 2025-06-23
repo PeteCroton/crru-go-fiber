@@ -1,0 +1,86 @@
+package main
+
+import (
+	"fmt"
+
+	"github.com/PeteCroton/go-basic/module"
+)
+
+// func sum(msg string, a, b int) int {
+// 	fmt.Println(msg)
+// 	return a + b
+// }
+
+// func sum_text(msg string, a, b int) (int, string) {
+
+// 	return a + b, "Message : " + msg
+// }
+
+func basic() {
+
+	//fmt.Println(sum_text("Hello", 1, 2))
+
+	fmt.Println(module.Sum(100, 2))
+
+	fmt.Println(module.SumLoop(100, 2))
+
+	//string int32 int64 float64
+	// 8 bit = 1 byte
+	// 32 bit = 4 byte  int32 max = 2147483647
+	// 64 bit = 8 byte int64 max = 9223372036854775807
+
+	// uint64 max = 18446744073709551615 uint64 = 64 bit การใช้ uint จะไม่สามารถใช้ค่าลบได้
+	// var a int = 2
+	// fmt.Println(a)
+
+	var msg string = "Hello"
+	fmt.Println(msg)
+
+	a := 2
+	b := float64(a)
+	fmt.Println(a, b)
+
+	var an any
+	an = "Test"
+	an2 := an.(string)
+
+	fmt.Println(an2)
+
+	if a > 2 {
+		fmt.Println("a is not 2")
+	} else if a == 2 {
+		fmt.Println("a is 2")
+	} else {
+		fmt.Println("a less than 2")
+	}
+
+	score := 78
+	if score >= 80 {
+		fmt.Println("A")
+	} else if score >= 70 {
+		fmt.Println("B")
+	} else if score >= 60 {
+		fmt.Println("C")
+	} else if score >= 50 {
+		fmt.Println("D")
+	} else {
+		fmt.Println("F")
+	}
+
+	// switch
+	switch score {
+	case 80:
+		fmt.Println("A")
+	case 70:
+		fmt.Println("B")
+	case 60:
+		fmt.Println("C")
+	case 50:
+		fmt.Println("D")
+	default:
+		fmt.Println("F")
+	}
+
+	print(sum_array(1, 2, 3, 4, 5))
+
+}

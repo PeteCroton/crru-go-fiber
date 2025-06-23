@@ -1,0 +1,1 @@
+{"time":"2024-01-31 21:40:19","ip":"127.0.0.1","method":"GET","status_code":200,"path":"/api/v1/core/role/get_list_data","query":null,"body":null,"response":"Testing for logger get_all"}

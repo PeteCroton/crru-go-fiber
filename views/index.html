@@ -1,0 +1,22 @@
+<div class="container">
+    {{if .Facts}}
+        {{ range .Facts }}
+        <a href="/fact/{{ .ID }}">
+            <div class="fact-item">
+                <div class="question-wrapper">
+                    <p class="question">{{ .Question }}</p>
+                    <div class="actions">
+                        {{template "icon-arrow-right" .}}
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        {{ end }}
+    {{else}}
+        <div class="no-facts">
+            <p>No facts yet.</p>
+            <p><a href="/fact">Add now</a></p>
+        </div>
+    {{end}}
+</div>

@@ -1,0 +1,1 @@
+{"time":"2025-06-22 13:53:41","ip":"127.0.0.1","method":"POST","status_code":400,"path":"/api/v1/core/role/create_data","query":null,"body":null,"response":{"trace_id":"role-001","message":"ERROR: duplicate key value violates unique constraint \"roles_title_key\" (SQLSTATE 23505)"}}

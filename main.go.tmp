@@ -1,0 +1,96 @@
+package main
+
+import "fmt"
+
+var db := map[string]string{}
+
+func main() {
+	//var x [3]int = [3]int{1, 2, 3}
+	//x := [...]int{1, 2, 3}
+
+	//slice
+	x := []int{10, 12, 32}
+	y := append(x, 41, 59, 16)
+
+	z := len(x)
+
+	name := 'ก'
+	println(name)
+
+	fmt.Println(sum("Hello", 1, 2))
+	//println("Hello World")
+	//var x int
+	//y := 10
+	println(x[0])
+
+	fmt.Printf("%#v\n", y)
+
+	fmt.Println(y[1:])
+
+	fmt.Println(y[2:5])
+
+	fmt.Println(y[:3])
+
+	fmt.Println(z)
+
+	//Map
+	countries := map[string]string{}
+
+	countries["th"] = "Thailand"
+	countries["jp"] = "Japan"
+	countries["en"] = "English"
+
+	println(countries["th"])
+
+	country, ok := countries["en"]
+	if ok {
+		println(country)
+	} else {
+		println("Not found")
+	}
+
+	a, b := 10, 20
+	fmt.Println(a, b)
+
+	for i := 0; i < len(y); i++ {
+		println(y[i])
+	}
+
+	j := 0
+	for j < len(y) {
+		println(y[j])
+		j++
+	}
+
+	//ignore index
+	for _, v := range y {
+		println(v)
+	}
+
+	//anonymous function
+	xy := func(a, b int) int {
+		return a + b
+	}
+	sum := xy(10, 20)
+	println(sum)
+
+	print(sum_array(1, 2, 3, 4, 5))
+}
+
+func sum_array(a ...int) int {
+	s := 0
+	for _, v := range a {
+		s += v
+	}
+	return s
+}
+
+func sum(msg string, a, b int) (int, string) {
+	//fmt.Println(msg)
+	return a + b, "Message : " + msg
+}
+
+//golang.org
+//https://pkg.go.dev
+
+//https://github.com/codebangkok/golang

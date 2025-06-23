@@ -1,0 +1,5 @@
+{"time":"2024-02-02 10:18:50","ip":"127.0.0.1","method":"GET","status_code":404,"path":"/fact/home/xxx","query":null,"body":null,"response":{"trace_id":"middlware-001","message":"Rotuer not found"}}
+{"time":"2024-02-02 10:19:11","ip":"127.0.0.1","method":"GET","status_code":404,"path":"/style/main.css","query":null,"body":null,"response":{"trace_id":"middlware-001","message":"Rotuer not found"}}
+{"time":"2024-02-02 10:19:13","ip":"127.0.0.1","method":"GET","status_code":404,"path":"/style/main.css","query":null,"body":null,"response":{"trace_id":"middlware-001","message":"Rotuer not found"}}
+{"time":"2024-02-02 10:27:05","ip":"127.0.0.1","method":"GET","status_code":404,"path":"/fact/home/xxx","query":null,"body":null,"response":{"trace_id":"middlware-001","message":"Rotuer not found"}}
+{"time":"2024-02-02 10:27:35","ip":"127.0.0.1","method":"GET","status_code":404,"path":"/fact/demov/shlasdfas","query":null,"body":null,"response":{"trace_id":"middlware-001","message":"Rotuer not found"}}
